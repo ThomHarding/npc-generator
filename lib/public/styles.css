@@ -604,3 +604,7 @@ img {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+
+#create {
+  outline-style: inset;
+}

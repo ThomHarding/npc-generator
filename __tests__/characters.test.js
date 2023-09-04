@@ -13,7 +13,7 @@ describe('characters routes', () => {
     const bill = res.body.find((char) => char.id === '1');
     expect(bill).toHaveProperty('name', 'bill down tpub');
     expect(bill).toHaveProperty('species', 'shifter');
-    expect(bill).toHaveProperty('background', 1);
+    expect(bill).toHaveProperty('background', 'God Fearing');
     expect(bill).toHaveProperty('technophobia');
   });
 

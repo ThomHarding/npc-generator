@@ -152,7 +152,7 @@ INSERT INTO person (
   cult_member
 )
 VALUES 
-  ('bill down tpub', 20, 3, 1, 1, 0, 50, 25, FALSE);  
+  ('bill down tpub', 21, 3, 1, 1, 0, 50, 25, FALSE);  
 
   
 INSERT INTO species (
