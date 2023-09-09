@@ -17,28 +17,33 @@
           </span>
           <span id="options">
             <select id="region">
-              <option value="The Wash"></option>
-              <option value="Kraw"></option>
-              <option value="Hofang"></option>
-              <option value="Sarcen"></option>
-              <option value="Vessali"></option>
+              <option value="The Wash">The Wash</option>
+              <option value="Kraw">Kraw</option>
+              <option value="Hofang">Hofang</option>
+              <option value="Sarcen">Sarcen</option>
+              <option value="Vessali">Vessali</option>
             </select>
-            <input id="race">
-            <input id="background">
+            <input placeholder="insert species here" id="race" >
+            <input placeholder="insert background id here" id="background">
             <select id="agegroup">
-              <option value="child"></option>
-              <option value="teenage"></option>
-              <option value="adult"></option>
-              <option value="elderly"></option>
+              <option value=1>Child</option>
+              <option value=2>Teenage</option>
+              <option value=3>Adult</option>
+              <option value=4>Elderly</option>
             </select>
             <input id="name">
           </span>
         </span>
-        <button id="create">
+        <button onclick="createChar()" id="create">
           Create character
         </button>
+        <script>
+          function createChar() {
+            //probably just go to /create with whatever information in the url
+          }
+        </script>
         <span id="output">
-          created dude
+          
         </span>
     </main>
   </body>
