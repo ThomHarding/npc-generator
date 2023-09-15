@@ -15,7 +15,7 @@
           <span id="regions map">
             <img src="./thewash.png"/>
           </span>
-          <span id="options">
+          <form id="options">
             <select id="region">
               <option value="The Wash">The Wash</option>
               <option value="Kraw">Kraw</option>
@@ -32,11 +32,9 @@
               <option value=4>Elderly</option>
             </select>
             <input id="name">
-          </span>
+            <button type="button" onclick="window.location.href='/character/testinsert'">Create character</button>
+          </form>
         </span>
-        <button onclick="createChar()" id="create">
-          Create character
-        </button>
         <script>
           function createChar() {
             //probably just go to /create with whatever information in the url
