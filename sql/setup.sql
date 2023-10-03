@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS background;
 DROP TABLE IF EXISTS person;
 DROP TABLE IF EXISTS species;
 DROP TABLE IF EXISTS region;
+DROP TABLE IF EXISTS regionnames;
 
 CREATE TABLE background (
   background_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -65,6 +66,41 @@ CREATE TABLE species (
   species_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name VARCHAR(200) NOT NULL
 );
+
+CREATE TABLE regionnames (
+  name_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  kraw_first VARCHAR(200),
+  vessali_first VARCHAR(200),
+  sarcen_first VARCHAR(200),
+  wash_first VARCHAR(200),
+  kraw_last VARCHAR(200),
+  vessali_last VARCHAR(200),
+  sarcen_last VARCHAR(200),
+  wash_last VARCHAR(200)
+ );
+ 
+ INSERT INTO regionnames (
+   kraw_first,
+   vessali_first,
+   sarcen_first,
+   wash_first,
+   kraw_last,
+   vessali_last,
+   sarcen_last,
+   wash_last
+ )
+ VALUES
+  ('Jad', 'Arumawann', 'Louis', 'Kashi', NULL, 'Erok', 'Dubois', 'Kiryi'),
+  ('Charr', 'Fribblefroc', 'Pierre', 'Aputi', NULL, 'Guronq', 'Réservé', 'Hashai'),
+  ('Kazzakh', 'Eolara', 'Jacques', 'Ka''aki', NULL, 'Cloxaro', 'Solennel', 'Baelu'),
+  ('Vrond', 'Igden', 'Edouart', 'Ho''onu', NULL, 'Westaran', 'Barré', 'Cronu'),
+  ('Kerkad', 'Praku', 'Gaston', 'Ina', NULL, 'Trossaran', 'de Garmeaux', 'Mame'),
+  ('Quesk', 'Maunke', 'Guillemette', 'Sana', NULL, 'Illicken', 'Deschamps', 'Tsukumo'),
+  ('Tatyana', 'Bill', 'Melisende', 'Kailani', NULL, 'Smith', 'de le grande noblesse audacieuse et belle depuis le toit du manoir', 'Ha''akai'),
+  ('Srtorth', 'Praatheaur', 'Agnez', 'Tiaho', NULL, 'Miggleden', 'Cuirassée', 'Boatsworth'),
+  ('Mahzak', 'Gillkalam', 'Amelie', 'Waiola', NULL, 'In-zariah', 'Hubert', 'Ngamahi'),
+  ('Ildrex', 'Callabor', 'Ysabeau', 'Elenoa', NULL, 'Zyqxy', 'Jean-Baptiste', 'Gare')
+ ;
 
 INSERT INTO background (
   name
@@ -185,3 +221,4 @@ VALUES
   ('bugbear'),
   ('kobold'),
   ('minotaur');
+  
