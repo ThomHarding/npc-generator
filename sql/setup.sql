@@ -84,22 +84,24 @@ CREATE TABLE regionnames (
    vessali_first,
    sarcen_first,
    wash_first,
+   hofang_first,
    kraw_last,
    vessali_last,
    sarcen_last,
-   wash_last
+   wash_last,
+   hofang_last
  )
  VALUES
-  ('Jad', 'Arumawann', 'Louis', 'Kashi', NULL, 'Erok', 'Dubois', 'Kiryi'),
-  ('Charr', 'Fribblefroc', 'Pierre', 'Aputi', NULL, 'Guronq', 'Réservé', 'Hashai'),
-  ('Kazzakh', 'Eolara', 'Jacques', 'Ka''aki', NULL, 'Cloxaro', 'Solennel', 'Baelu'),
-  ('Vrond', 'Igden', 'Edouart', 'Ho''onu', NULL, 'Westaran', 'Barré', 'Cronu'),
-  ('Kerkad', 'Praku', 'Gaston', 'Ina', NULL, 'Trossaran', 'de Garmeaux', 'Mame'),
-  ('Quesk', 'Maunke', 'Guillemette', 'Sana', NULL, 'Illicken', 'Deschamps', 'Tsukumo'),
-  ('Tatyana', 'Bill', 'Melisende', 'Kailani', NULL, 'Smith', 'de le grande noblesse audacieuse et belle depuis le toit du manoir', 'Ha''akai'),
-  ('Srtorth', 'Praatheaur', 'Agnez', 'Tiaho', NULL, 'Miggleden', 'Cuirassée', 'Boatsworth'),
-  ('Mahzak', 'Gillkalam', 'Amelie', 'Waiola', NULL, 'In-zariah', 'Hubert', 'Ngamahi'),
-  ('Ildrex', 'Callabor', 'Ysabeau', 'Elenoa', NULL, 'Zyqxy', 'Jean-Baptiste', 'Gare')
+  ('Jad', 'Arumawann', 'Louis', 'Kashi', 'Arkada', NULL, 'Erok', 'Dubois', 'Kiryi', 'Davaajav'),
+  ('Charr', 'Fribblefroc', 'Pierre', 'Aputi', 'Najik', NULL, 'Guronq', 'Réservé', 'Hashai', 'Chone'),
+  ('Kazzakh', 'Eolara', 'Jacques', 'Ka''aki', 'Arkadaş', NULL, 'Cloxaro', 'Solennel', 'Baelu', 'Dzhambul'),
+  ('Vrond', 'Igden', 'Edouart', 'Ho''onu', 'Büyük', NULL, 'Westaran', 'Barré', 'Cronu', 'Elbeg'),
+  ('Kerkad', 'Praku', 'Gaston', 'Ina', 'Akıllı', NULL, 'Trossaran', 'de Garmeaux', 'Mame', 'Erdene'),
+  ('Quesk', 'Maunke', 'Guillemette', 'Sana', 'Münzevi', NULL, 'Illicken', 'Deschamps', 'Tsukumo', 'Gan'),
+  ('Tatyana', 'Bill', 'Melisende', 'Kailani', 'Gelenek', NULL, 'Smith', 'de le grande noblesse audacieuse et belle depuis le toit du manoir', 'Ha''akai', 'Khuyag'),
+  ('Srtorth', 'Praatheaur', 'Agnez', 'Tiaho', 'Diş', NULL, 'Miggleden', 'Cuirassée', 'Boatsworth', 'Narmandakh'),
+  ('Mahzak', 'Gillkalam', 'Amelie', 'Waiola', 'Bilenmiş', NULL, 'In-zariah', 'Hubert', 'Ngamahi', 'Ulagan'),
+  ('Ildrex', 'Callabor', 'Ysabeau', 'Elenoa', 'Kılıç', NULL, 'Zyqxy', 'Jean-Baptiste', 'Gare', 'Zhanzhin')
  ;
 
 INSERT INTO background (
