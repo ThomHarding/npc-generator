@@ -210,23 +210,6 @@ select {
 }
 
 /*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
-}
-
-/*
 Use the modern Firefox focus style for all focusable elements.
 */
 
@@ -590,21 +573,60 @@ main {
   text-transform: uppercase;
   text-align: center;
 }
-img {
-  width: 150px;
-}
-
-.code {
-  font-size: 0.75em;
-  padding: 5px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-}
 
 #create {
   outline-style: inset;
+}
+
+#toprow {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+#regionmap {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  top:50%;
+  left: 50%;
+}
+
+#options {
+  display: flex;
+  flex-wrap: row nowrap;
+  padding: 5%;
+}
+
+button {
+  border: 2px;
+  border-radius: 12px;
+  border-color: rgb(8, 82, 36);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.washbutton {
+  background-color: #17c7fd
+}
+
+.krawbutton {
+  background-color: #7e1f02
+}
+
+.hofangbutton {
+  background-color: #997000
+}
+
+.sarcenbutton {
+  background-color: #04AA6D
+}
+
+.vessalibutton {
+  background-color: #788a83
 }

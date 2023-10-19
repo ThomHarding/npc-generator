@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles.css" rel="stylesheet" />
+    <script defer type="text/javascript" src="index.js"></script>
     <title>Into the Wash NPC Generator</title>
   </head>
   <body>
     <main class="p-4 w-1/2 m-auto">
       <header id="header">
         <span id="toprow">
-          <a href="/characters">the boys</a>
-          <span id="regions map">
+          <a href="/characters">WELCOME TO THE RAT CAFE</a>
+          <span id="regionmap">
             <img src="./thewash.png"/>
           </span>
           <form id="options">
             <select id="region">
-              <option value="The Wash">The Wash</option>
-              <option value="Kraw">Kraw</option>
-              <option value="Hofang">Hofang</option>
-              <option value="Sarcen">Sarcen</option>
-              <option value="Vessali">Vessali</option>
+              <option value=1>The Wash</option>
+              <option value=2>Kraw</option>
+              <option value=3>Hofang</option>
+              <option value=4>Sarcen</option>
+              <option value=5>Vessali</option>
             </select>
+            <input placeholder="NPC name" id="charname" >
             <input placeholder="insert species here" id="race" >
             <input placeholder="insert background id here" id="background">
             <select id="agegroup">
@@ -32,20 +34,16 @@
               <option value=4>Elderly</option>
             </select>
             <input id="name">
-            <button type="button" onclick="window.location.href='/characters/insert/1'">The Wash</button>
-            <button type="button" onclick="window.location.href='/characters/insert/2'">Kraw</button>
-            <button type="button" onclick="window.location.href='/characters/insert/3'">Hofang</button>
-            <button type="button" onclick="window.location.href='/characters/insert/4'">Sarcen</button>
-            <button type="button" onclick="window.location.href='/characters/insert/5'">Vessali</button>
+            <br>
+            <input type="submit" value="Create">
           </form>
         </span>
-        <script>
-          function createChar() {
-            //probably just go to /create with whatever information in the url
-          }
-        </script>
-        <span id="output">
-          
+        <span id="random-buttons">
+          <button class="washbutton" type="button" onclick="window.location.href='/characters/insert/1'">Random Wash</button>
+          <button class="krawbutton" type="button" onclick="window.location.href='/characters/insert/2'">Random Kraw</button>
+          <button class="hofangbutton" type="button" onclick="window.location.href='/characters/insert/3'">Random Hofang</button>
+          <button class="sarcenbutton" type="button" onclick="window.location.href='/characters/insert/4'">Random Sarcen</button>
+          <button class="vessalibutton" type="button" onclick="window.location.href='/characters/insert/5'">Random Vessali</button>
         </span>
     </main>
   </body>
