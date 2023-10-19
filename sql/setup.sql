@@ -72,10 +72,12 @@ CREATE TABLE regionnames (
   kraw_first VARCHAR(200),
   vessali_first VARCHAR(200),
   sarcen_first VARCHAR(200),
+  hofang_first VARCHAR(200),
   wash_first VARCHAR(200),
   kraw_last VARCHAR(200),
   vessali_last VARCHAR(200),
   sarcen_last VARCHAR(200),
+  hofang_last VARCHAR(200),
   wash_last VARCHAR(200)
  );
  
