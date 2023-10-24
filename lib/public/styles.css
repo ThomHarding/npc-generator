@@ -596,6 +596,11 @@ main {
   display: flex;
   flex-wrap: row nowrap;
   padding: 5%;
+  margin-left: 25%;
+}
+
+.formparts {
+  margin-right: 5px;
 }
 
 button {
@@ -609,6 +614,14 @@ button {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+}
+
+#submitbutton {
+  border: 7px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #008000;
 }
 
 .washbutton {
