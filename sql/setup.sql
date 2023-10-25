@@ -179,21 +179,6 @@ VALUES
   ('Sarcen', 1, 30, 50, 20, 90, 2, 3, 4, 5, 5, 6, 24, 25, 25, 26, 36, 37, 37, 37, 37, 39, 74, 81, 87, 93, 98, 98, 98, 100, 100, 100),
   ('Vessali', 24, 20, 15, 35, 10, 15, 18, 19, 21, 24, 28, 33, 36, 37, 39, 42, 44, 54, 55, 56, 57, 67, 69, 70, 71, 72, 80, 87, 92, 97, 100)
   ;
-
-INSERT INTO person (
-  name,
-  species,
-  age_group, --child, teenage x2, adult x8, elderly x3
-  background, --as listed on the backgrounds doc
-  region_id,
-  alignment_good_evil, --0 to 100, 0 good 100 evil 50 neutral
-  alignment_law_chaos, --0 to 100, 0 lawful 100 chaotic 50 neutral
-  technophobia, -- 0 to 100
-  cult_member
-)
-VALUES 
-  ('bill down tpub', 21, 3, 1, 1, 0, 50, 25, FALSE);  
-
   
 INSERT INTO species (
   name

@@ -596,7 +596,6 @@ main {
   display: flex;
   flex-wrap: row nowrap;
   padding: 5%;
-  margin-left: 25%;
 }
 
 .formparts {
